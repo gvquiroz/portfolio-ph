@@ -1,218 +1,727 @@
-<p align="center">
-  <a href="https://jodie.lekoarts.de">
-    <img alt="LekoArts" src="https://img.lekoarts.de/gatsby/gatsby-site-illustration.png" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Starter Portfolio: Jodie
-</h1>
+# We forked original repo that was removed by it's author(Narative). 
+This theme is deprecated and no longer maintained by anyone. Instead we recommend to use our [premium blog theme](https://gatsbytemplates.io/theme/california-gatsby-theme/). You'll get:
+* 2-year updates
+* 24-hour tech support
+* premium code quality
 
-<p align="center">
-  <a href="https://github.com/LekoArts/gatsby-starter-portfolio-jodie/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-0BSD-blue.svg" alt="Gatsby Starter Portfolio: Jodie is released under the 0BSD license." />
-  </a>
-  <a href="https://github.com/sponsors/LekoArts">
-    <img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/LekoArts">
-  </a>
-  <a href="https://www.lekoarts.de?utm_source=jodie&utm_medium=Starter">
-    <img alt="Website" src="https://img.shields.io/badge/-website-blue">
-  </a>
-  <a href="https://twitter.com/intent/follow?screen_name=lekoarts_de">
-    <img src="https://img.shields.io/twitter/follow/lekoarts_de.svg?label=Follow%20@lekoarts_de" alt="Follow @lekoarts_de" />
-  </a>
-</p>
+Your time worth it.
 
-Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects. Using the Gatsby Theme [`@lekoarts/gatsby-theme-jodie`](https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-jodie).
+This theme is still here for history and in case you want to use some parts of code in your site.
 
-[**Demo Website**](https://jodie.lekoarts.de)
+## Novela — A Gatsby theme by Narative
 
-Also be sure to check out other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de) and my [Personal Website](https://www.lekoarts.de?utm_source=jodie&utm_medium=Starter).
+With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — Novela makes it easy to start publishing beautiful articles and stories with Gatsby.
 
-## ✨ Features
+Novela is built by the team at [Narative](https://www.narative.co), and built for everyone that loves the web.
 
-- MDX
-- Fully customizable through the usage of Gatsby Themes (and Theme UI)
-- Create a project by creating an MDX file and dropping the images into the same folder
-- Extensible custom pages
-- Define colors for each page and the sidebar & content will adapt while maintaining WCAG 2 AA contrast ratios
-- SEO (Sitemap, OpenGraph tags, Twitter tags)
-- WebApp Manifest
+Special thanks to [@jpvalery](https://github.com/jpvalery) for helping maintain Novela.
 
-## 🚀 Getting Started
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/LekoArts/gatsby-starter-portfolio-jodie)
+### Table of Contents
 
-### 1. **Create a Gatsby site.**
+- [Why Novela?](#why-use-novela)
 
-Use the Gatsby CLI to clone the site and install dependencies:
+- [Getting Started](#getting-started-with-gatsby-starter-novela)
+
+  - With Gatsby Starter Novela
+
+    - [Installation](#step-1-starter-installation)
+    - [Develop & Build](#step-2-develop--build)
+
+  - From scratch
+
+    - [Installation](#step-1-installation)
+    - [Folder structure](#step-2-folder-structure)
+    - [Using Novela Theme](#step-3-using-narativegatsby-theme-novela)
+    - [Adding an Author](#step-4-adding-an-author)
+    - [Adding a Post](#step-5-adding-a-post)
+    - [Configuring Site Metadata](#step-6-configuring-sitemetadata)
+
+- [Data Sources](#data-sources)
+
+  - [Local](#local)
+  - [Contentful](#contentful)
+
+- [Customization](#customization)
+
+  - [Enabling Author Pages](#enabling-author-pages)
+  - [Changing styles](#changing-styles)
+  - [Component shadowing](#component-shadowing)
+  - [Using images](#using-images)
+  - [Adding your logo](#adding-your-logo)
+  - [Adding Mailchimp](#adding-mailchimp)
+
+- [Data Models](#data-models)
+
+  - [Theme Options](#theme-options)
+  - [Author](#author)
+  - [Post](#post)
+  - [Site Metadata](#site-metadata)
+
+- [Future](#the-future)
+
+  <br />
+
+# Getting Started with Gatsby Starter Novela
+
+This guide will take you through setting up Novela with Gatsby Starter Novela.
+
+### Step 1: Starter installation
+
+##### With `gatsby-cli`:
 
 ```sh
-npx gatsby new gatsby-starter-portfolio-jodie https://github.com/LekoArts/gatsby-starter-portfolio-jodie
+gatsby new novela-site https://github.com/narative/gatsby-starter-novela
 ```
 
-### 2. **Navigate to your new project.**
+##### With `git clone`:
 
 ```sh
-cd gatsby-starter-portfolio-jodie
+git clone git@github.com:narative/gatsby-starter-novela.git novela-site
+
+cd novela-site
+
+yarn
 ```
 
-### 3. **Open the code and start customizing!**
+### Step 2: Develop & Build
 
-Start the site by running `npm run develop`.
+Once installed or cloned locally and all packages are installed you can begin developing your site.
 
-Your site is now running at `http://localhost:8000`!
+```sh
+# Run localhost
+yarn dev
 
-If you want to learn more about how you can use a Gatsby starter that is configured with a Gatsby theme, you can check out this [shorter](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/using-a-gatsby-theme/) or [longer](https://www.gatsbyjs.com/tutorial/using-a-theme/) tutorial. The tutorials don't exactly apply to this starter however the concepts are the same.
+# Build your Gatsby site
+yarn build
+```
 
-## 📝 Using and modifying this starter
+To learn more about adding Authors, Posts, and Site Metadata see:
 
-**Important Note:** Please read the guide [Shadowing in Gatsby Themes](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/) to understand how to customize the underlying theme!
+- [Adding an Author](#step-4-adding-an-author)
+- [Adding a Post](#step-5-adding-a-post)
+- [Configuring Site Metadata](#step-6-configuring-sitemetadata)
 
-This starter creates a new Gatsby site that installs and configures the theme [`@lekoarts/gatsby-theme-jodie`](https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-jodie).
+# Getting Started from scratch
 
-Have a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@lekoarts/gatsby-theme-jodie/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.
+This guide will take you through adding Novela to a new project. You do not require any Gatsby starters or similar, but you can add Novela to an existing Gatsby project.
 
-### Changing the logo
+You can also view the completed [example repository](https://github.com/narative/gatsby-theme-novela-example).
 
-Edit the file at `src/@lekoarts/gatsby-theme-jodie/icons/logo.jsx`.
+### Step 1: Installation
 
-### Changing your fonts
+```sh
+# Create an empty directory and go into it
+mkdir novela-site && cd novela-site
 
-By default, the underlying theme and thus this starter uses "Work Sans" as its font. It's used throughout the site and set as a `font-family` on the `html` element.
+# Add all required dependencies
+yarn add react react-dom gatsby @narative/gatsby-theme-novela
+```
 
-If you want to change your default font or add any additional fonts, you'll need to change a couple of things:
+### Step 2: Folder structure
 
-1. Font file inside `static/fonts`
-1. Preload link inside `gatsby-ssr.js` (the name of the font file)
-1. CSS in `global.css`
-1. The Theme UI config and its `fonts` key (see [Theme UI Typography Docs](https://theme-ui.com/theming#typography))
+Once you've installed React, Gatsby, and Novela you'll want to add your first Author and Post.
 
-For the sake of this explanation it's assumed that you replaced "Work Sans" with "Roboto Mono".
+The recommended project structure for your content and site looks like this:
 
-Change the file `src/gatsby-plugin-theme-ui/index.js` with the following contents:
+```
+  novela-site
+    ├── content
+    │ ├── authors
+    │ │   ├── avatars
+    │ │   │    └── avatar.jpg
+    │ │   └── authors.yml
+    │ └── posts
+    │     └── 2020-01-01-my-first-novela-post
+    │         ├── images
+    │         │   └── novela-hero.jpg
+    │         └── index.mdx
+    ├── node_modules
+    ├── gatsby-config.js
+    └── package.json
+```
+
+### Step 3: Using `@narative/gatsby-theme-novela`
+
+You must add `@narative/gatsby-theme-novela` as a plugin in `gatsby-config.js`.
+`@narative/gatsby-theme-novela` is configurable through plugin options but we will use the defaults for now.
 
 ```js
-// Inside src/gatsby-plugin-theme-ui/index.js
-import { merge } from "theme-ui";
-import originalTheme from "@lekoarts/gatsby-theme-jodie/src/gatsby-plugin-theme-ui/index";
+// gatsby-config.js
 
-const theme = merge(originalTheme, {
-  fonts: {
-    body: `"Roboto Mono", monospace`,
+module.exports = {
+  plugins: ['@narative/gatsby-theme-novela'],
+};
+```
+
+---
+
+Once you've setup `@narative/gatsby-theme-novela` plugin in `gatsby-config.js` you can start creating your first Posts. In order to create a Post you also need at least one Author.
+
+### Step 4: Adding an Author
+
+In [step 2](#step-2-folder-structure) we created the folder structure of our project. We can now add an Author by populating `/content/authors/authors.yml`:
+
+```
+  novela-site
+  └── content
+    └── authors
+        ├── avatars
+        │    └── brotzky-avatar.jpg
+        └── authors.yml
+```
+
+In `authors.yml` add an Author. There **must** be at least one `featured` Author.
+
+`/content/authors/authors.yml`:
+
+```yml
+- name: Dennis Brotzky
+  bio: |
+    Written by Dennis Brotzky who lives and works in Vancouver building useful things.
+    You should follow him on Twitter.
+  avatar: ./avatars/brotzky-avatar.jpg
+  featured: true
+  social:
+    - url: https://unsplash.com
+    - url: https://stackoverflow.com
+    - url: https://github.com
+```
+
+### Step 5: Adding a Post
+
+Once you have at least one Author defined in `authors.yml` you can add your first Post.
+
+Start by creating a new folder in `content/posts`. You can name it anything you like but we recommend including the date at the front to organize your posts. Once you've created your folder you can add an `index.mdx` file and an `images` folder.
+
+`/content/posts/2020-01-01/index.mdx`
+
+```yml
+---
+title: Why Narative loves Gatsby
+author: Dennis Brotzky
+date: 2019-04-27
+hero: ./images/narative-gatsby-hero.jpg
+excerpt: This is a love story about Narative and Gatsby
+---
+# And then under the heading YML you can insert any MDX you like
+# like headings, links, code, images, etc
+# This will show up in the body of your post
+# ...
+```
+
+### Step 6: Configuring siteMetadata
+
+In order to configure the theme to properly generate the pages and meta tags you must add specific data to `siteMetadata`.
+
+The fields that are unique to Novela are `hero.heading`, `hero.maxWidth`, and `social`.
+
+Add your Site Metadata to the `gatsby-config.js` file.
+
+```js
+// gatsby-config.js
+
+module.exports = {
+  siteMetadata: {
+    title: `Novela by Narative`,
+    name: `Narative`,
+    siteUrl: `https://gatsby-theme-novela.netlify.com`,
+    description: `This is my description that will be used in the meta tags and important for search results`,
+
+    // important to set the main text that appears in the hero
+    hero: {
+      heading: `Perspectives on technology, design and business from the team at Narative.`,
+      maxWidth: 652,
+    },
+    social: [
+      {
+        name: `twitter`,
+        url: `https://twitter.com/narative`,
+      },
+      {
+        name: `github`,
+        url: `https://github.com/narative`,
+      },
+    ],
   },
-});
-
-export default theme;
+  plugins: ['@narative/gatsby-theme-novela'],
+};
 ```
 
-As defined in the [Theme Specification](https://theme-ui.com/theme-spec#typography) `body` is the default body font family.
+### You can now run your site
 
-**Another example:** You didn't replace "Work Sans" but added "Roboto Mono" additionally since you want to use it for your headings.
+Once all steps have been completed you can run your site. In the root of your project run `gatsby develop`.
 
-Then you'd not overwrite `body` but add a `heading` key:
+If you ran into problems you can reference the [example repository](https://github.com/narative/gatsby-theme-novela-example) or create an issue.
+
+<br />
+
+- [Data Sources](#data-sources)
+
+# Data Sources
+
+With the flexibility of Gatsby, Novela is able to pull different data sources to build your website. Right now we support Contentful and your local file system. All data sources can be combined together or used separately.
+
+### Local
+
+Local is the default data source for Novela. Write MDX and YAML in order to generate posts and authors. This is the fastest and simplest way to get started.
+
+To learn how to use the local file system, read the [Installation](#installation) steps.
+
+### Contentful
+
+Contentful provides the flexibility of a headless CMS which allows you to write content without committing new files and working in a text editor. The setup process is simple if you are familiar with Contentful.
+
+You will need to setup your Contentful space and import the Novela model.
+
+#### Setting up `gatsby-source-contentful` in your project
+
+In order to use Contentful you must first install the plugin and `dotenv` in your project
+
+```sh
+yarn add gatsby-source-contentful dotenv
+```
+
+Then pass in the environment variables `.env` to the plugin
+
+#### `.env`
+
+```
+CONTENTFUL_SPACE_ID= (Your Contentful Space ID)
+CONTENTFUL_ACCESS_TOKEN= (Your Content Delivery API - access token)
+```
+
+#### `gatsby-config.js`
 
 ```js
-// Inside src/gatsby-plugin-theme-ui/index.js
-import { merge } from "theme-ui";
-import originalTheme from "@lekoarts/gatsby-theme-jodie/src/gatsby-plugin-theme-ui/index";
+require('dotenv').config();
 
-const theme = merge(originalTheme, {
-  fonts: {
-    heading: `"Roboto Mono", monospace`,
+plugins: [
+  {
+    resolve: 'gatsby-source-contentful',
+    options: {
+      spaceId: process.env.CONTENTFUL_SPACE_ID,
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    },
   },
-});
-
-export default theme;
+  {
+    resolve: '@narative/gatsby-theme-novela',
+    options: {
+      sources: {
+        contentful: true,
+      },
+    },
+  },
+];
 ```
 
-### Customizing the homepage
+Finally, import the Contentful Model from Novela to get started. Novela Contentful Queries will not work without this exact data model.
 
-Both your projects and pages are displayed on the homepage (located at `/` in the live project and [`src/components/homepage.tsx`](https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/src/components/homepage.tsx) in the theme itself). Of course, you can always shadow this and other files to customize the theme to your liking.
+#### [Novela Contentful Data](https://github.com/narative/gatsby-theme-novela/tree/master/%40narative/gatsby-theme-novela/contentful)
 
-However, before completely overriding the homepage you should consider the three available options:
+[Contentful space import docs](https://github.com/contentful/contentful-cli/tree/master/docs/space/import)
 
-1. `homepagePageLimit`
-2. `homepageProjectLimit`
-3. Shadowing [`modify-grid.ts`](https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/src/utils/modify-grid.ts)
+Once you have your project setup with `gatsby-source-contentful` and `@narative/gatsby-theme-novela` and your Contentful space is setup with the imported model you are good to go.
 
-The options 1) and 2) are explained in the theme options -- they limit the number of projects and pages that will randomly be distributed on the page.
+⚠️ Please make sure you have at least one Media Asset uploaded or you will run into a GraphQL error: https://github.com/gatsbyjs/gatsby/issues/15397
 
-Option 3) is a really powerful one! The `modifyGrid` function is wrapping the entire array of projects & pages before passing it to the `render` function of the React component. Or in other words: As the name suggests you can modify the items that are passed to the grid on the homepage.
+# Customization
 
-You can achieve this by shadowing [`modify-grid.ts`](https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/src/utils/modify-grid.ts): Create a file at `src/@lekoarts/gatsby-theme-jodie/utils/modify-grid.js` and define a default export for `modifyGrid`.
+Once you've created the Logo component it should automatically appear in your site.
 
-#### `modifyGrid` examples
+The technique we have used is called Component Shadowing and is a core feature of Gatsby Themes.
 
-_All code snippets are placed inside `src/@lekoarts/gatsby-theme-jodie/utils/modify-grid.js`_
+### Enabling Author pages
 
-**Default behavior:**
+By default Author pages are not enabled. They can be enabled through the plugin option `authorsPage`. If you decided to enable Author pages please make sure you have all the required for each author you add.
 
 ```js
-const modifyGrid = (data) => data;
-
-export default modifyGrid;
+module.exports = {
+  plugins: [
+    {
+      resolve: '@narative/gatsby-theme-novela',
+      options: {
+        authorsPage: true,
+      },
+    },
+  ],
+};
 ```
 
-I've also created some resolver templates that you can use. They are exported in [`resolver-templates.ts`](https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/src/utils/resolver-templates.ts). They cover the most common use cases and can give you an idea on what to do with the resolver.
+### Changing styles
 
-**Only pages / Only projects:**
+Novela allows you to change the default theme styling by updating the [theme-ui](https://theme-ui.com/) values. If you're familiar with Styled Components or Emotion it's the same as adapting the theme you pass to `ThemeProvider`.
+
+First, you must create a theme file and then you can override `novelaTheme` values.
+[See all Novela theme values](https://github.com/narative/gatsby-theme-novela/tree/master/%40narative/gatsby-theme-novela/src/gatsby-plugin-theme-ui)
 
 ```js
-import {
-  onlyPages,
-  onlyProjects,
-} from "@lekoarts/gatsby-theme-jodie/src/utils/resolver-templates";
+// src/gatsby-plugin-theme-ui/index.js
 
-const modifyGrid = (data) => onlyPages(data);
-// const modifyGrid = (data) => onlyProjects(data)
+import novelaTheme from '@narative/gatsby-theme-novela/src/gatsby-plugin-theme-ui';
 
-export default modifyGrid;
+export default {
+  ...novelaTheme,
+  initialColorMode: `dark`,
+  colors: {
+    ...novelaTheme.colors,
+    primary: '#000',
+    secondary: '#73737D',
+    accent: '#6166DC',
+    grey: '#73737D',
+    background: '#fff',
+  },
+};
 ```
 
-**Filter by slug:**
+### Component Shadowing
+
+> This feature allows users to override a component in order to customize its rendering.
+
+> Component Shadowing lets you replace the theme’s original file, gatsby-theme-novela/src/components/Logo.js, with your own to implement any changes you need.
+
+Any [component](https://github.com/narative/gatsby-theme-novela/tree/master/%40narative/gatsby-theme-novela/src/components) or [section](https://github.com/narative/gatsby-theme-novela/tree/master/%40narative/gatsby-theme-novela/src/sections) is able to be replaced with your own custom component.
+
+This opens up a full customization of Novela to your designed needs. You can copy any component directly from Novela and alter it how you like, or you can create your own component to replace Novela's entirely.
+
+A basic example of component shadowing is explained below by [adding your logo](#adding-your-logo).
+
+### Using images
+
+Images can be added to Posts and customized to fit your content. Define a regular Markdown image that will default to Small or write HTML to customize the sizes. All images can be clicked to zoom.
+
+```html
+![This is the alt text for small image](./images/small.jpg)
+
+<div className="Image__Small">
+  <img src="./images/small.jpg" alt="This is the alt text small image" />
+</div>
+
+<div className="Image__Medium">
+  <img src="./images/medium.jpg" alt="This is the alt text medium image" />
+</div>
+
+<div className="Image__Large">
+  <img src="./images/large.jpg" alt="This is the alt text large image" />
+</div>
+```
+
+| Size   |   Class Name    |          Description           |
+| ------ | :-------------- | :---------------------------- |
+| small  | Image\_\_Small  |       Width of the text       |
+| medium | Image\_\_Medium | Larger than width of the text |
+| large  | Image\_\_Large  |       Full width image        |
+
+### Adding your logo
+
+Your logo must be in SVG (vector) format in order to add it to the theme. This is required because we will be making a React component containing your SVG Logo.
+
+Start by creating the component file at:
+
+```
+  novela-site
+  └── src
+    └── @narative
+      └── gatsby-theme-novela
+        └── components
+          └── Logo
+            └── index.js
+```
+
+It is important you create the exact folder structure so Gatsby knows to shadow this component. Once the file is created you can create your Logo component.
+
+```jsx
+import React from 'react';
+
+/**
+ * Paste in your SVG logo and return it from this component.
+ * Make sure you have a height set for your logo.
+ * It is recommended to keep the height within 25-35px.
+ * Logo comes with a property value called `fill`. `fill` is useful 
+ * when you want to change your logo depending on the theme you are on. 
+ */
+export default function Logo({ fill }) {
+  return (
+    <svg viewBox="0 0 106 28" height="30px">
+      <path d="M62.9 12h2.8v10...." />
+      <path fill={fill} d="M25 14h-..." />
+      <path d="M14 0C6.3..." fill="#639" />
+    </svg>
+  );
+}
+```
+
+### Adding Mailchimp
+
+Want to add a subscription newsletter to your Posts? Novela gives you the option to integrate and build your following in a few easy steps.
+
+Start by downloading [gatsby-plugin-mailchimp](https://github.com/benjaminhoffman/gatsby-plugin-mailchimp):
+
+```sh
+yarn add gatsby-plugin-mailchimp
+```
+
+Then configure the plugins
 
 ```js
-import { filterBySlug } from "@lekoarts/gatsby-theme-jodie/src/utils/resolver-templates";
-
-const modifyGrid = (data) => filterBySlug(data, ["/about"]);
-
-export default modifyGrid;
+plugins: [
+  {
+    resolve: '@narative/gatsby-theme-novela',
+    options: {
+      contentPosts: 'content/posts',
+      contentAuthors: 'content/authors',
+      basePath: '/',
+      mailchimp: true, // make sure this is true!
+    },
+  },
+  {
+    resolve: 'gatsby-plugin-mailchimp',
+    options: {
+      endpoint: '', // add your MC list endpoint here; see plugin repo for instructions
+    },
+  },
+];
 ```
 
-**Shuffle:**
+That's it. You will now have subscription boxes on each of your Posts.
+To disable the subscription box on individual Posts you can set `subscription: false` on the Post.
+
+You can shadow the Subscription component to customize the text displayed. It is recommended to copy and paste the current component and only alter the text.
+
+You will want to override it here:
+
+```
+  novela-site
+  └── src
+    └── @narative
+      └── gatsby-theme-novela
+        └── components
+          └── Subscription
+            └── index.js
+```
+
+<br />
+
+# Data Models
+
+## Theme Options
+
+It is recommended to use the Default options, but if your project requires something else you can configure them to your need.
+
+| Option                 |     Default     |                                                             Description                                                             |
+| ---------------------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
+| contentPosts           |  content/posts  |                                          Define where you want to pull your Post data from                                          |
+| contentAuthors         | content/authors |                                         Define where you want to pull your Author data from                                         |
+| authorsPage            |      false      |                                                         Create Author pages                                                         |
+| authorsPath            |    /authors     |                                                   Where should Author pages live?                                                   |
+| rootPath               |        /        |                                                   Define the index of your site                                                     |
+| basePath               |        /        |                      Where should the site be served from? `/blog` will change all paths to start with `/blog`                      |
+| pageLength               |        6        |                      How many posts should be shown per page                      |
+| articlePermalinkFormat |      :slug      | Define the format of the article permalink. Possible values: `:slug`, `:year`, `:month`, `:day`. Example: `:year/:month/:day/:slug` |
+| mailchimp              |      false      |                                             Enable Mailchimp subscriptions on each Post                                             |
+| sources.local          |      true       |                                                Enable local file system data source                                                 |
+| sources.contentful     |      false      |                                                    Enable Contentful data source                                                    |
+
+[View Theme option example](https://github.com/narative/gatsby-theme-novela-example/blob/master/gatsby-config.js#L36)
 
 ```js
-import { shuffle } from "@lekoarts/gatsby-theme-jodie/src/utils/resolver-templates";
-
-const modifyGrid = (data) => shuffle(data);
-
-export default modifyGrid;
+plugins: [
+  {
+    resolve: '@narative/gatsby-theme-novela',
+    options: {
+      contentPosts: 'content/posts',
+      contentAuthors: 'content/authors',
+      rootPath: '/',
+      basePath: '/',
+      pageLength: 6,
+      mailchimp: true,
+      sources: {
+        local: true,
+        contentful: true,
+      },
+    },
+  },
+];
 ```
 
-### Change your `static` folder
+## Author
 
-The `static` folder contains the icons, social media images and `robots.txt`. Don't forget to change these files, too! You can use [Real Favicon Generator](https://realfavicongenerator.net/) to generate the image files inside `static`.
+[View Author example](https://github.com/narative/gatsby-theme-novela-example/blob/master/content/authors/authors.yml)
 
-## 🤔 Questions or problems?
+| Key      | Required |  Type   |                                                                 Description                                                                 |
+| -------- | :------: | :----- | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| name     | required | String  |                                The Author's full name which is used should be used as a reference in Posts                                 |
+| bio      | required | String  |                                            The Author's bio which is displayed on the home page                                            |
+| avatar   | required |  Image  |                                                            The Author's avatar                                                             |
+| featured | optional | Boolean |                                              If `true` the Author will appear on the homepage                                              |
+| slug     | optional | String  |                          Override the autogenerated slug based on the Author's name. Do not include any slashes.                           |
+| social   | required |  Array  | A list of social accounts and urls. [View supported icon/name combinations](https://github.com/narative/gatsby-theme-novela/blob/master/%40narative/gatsby-theme-novela/src/components/SocialLinks/SocialLinks.tsx#L15) |
 
-If you have general questions or need help with Gatsby, please go to one of the [support platforms](https://www.gatsbyjs.com/contributing/community/#where-to-get-support) mentioned in Gatsby's documentation. If you have a specific question about this project, you can head to the [GitHub Discussions](https://github.com/LekoArts/gatsby-themes/discussions) of the repository.
+```yml
+- name: Dennis Brotzky
+  bio: |
+    Written by You. This is where your author bio lives. Share your work, your
+    joys and of course, your Twitter handle.
+  avatar: ./avatars/dennis-brotzky.jpg
+  featured: true
+  social:
+    - url: https://github.com
+    - url: https://twitter.com
 
-## 🎓 Learning Gatsby
+- name: Thiago Costa
+  bio: |
+    Written by You. This is where your author bio lives. Share your work, your
+    joys and of course, your Twitter handle.
+  avatar: ./avatars/thiago-costa.png
+```
 
-Looking for more guidance? Full documentation for Gatsby lives [on Gatsby's website](https://www.gatsbyjs.com/).
+## Post
 
-### Themes
+| Key          | Required |    Type    |                                          Description                                          |
+| ------------ | :------: | :-------- | :------------------------------------------------------------------------------------------- |
+| title        | required |   String   |                  Used as title and generates a default slug. Must be unique.                  |
+| slug         | optional |   String   |                Define a custom slug that will override the default title slug.                |
+| author       | required | String Ref | Must **match** a defined Author name. Co-author posts by adding comma seperated Author names. |
+| date         | required |    Date    |                                       YYYY-MM-DD format                                       |
+| hero         | required |   Image    |                               1200px minimum width recommended                                |
+| excerpt      | required |   String   |                                      140 character limit                                      |
+| subscription | optional |   String   |          If mailchimp is enabled disable the subscription box on an individual Post           |
+| secret       | optional |  Boolean   |           If secret the Post will not appear in paginated lists. Defaults to false.           |
 
-To learn more about Gatsby themes specifically, I recommend checking out the [theme docs](https://www.gatsbyjs.com/docs/themes/).
+[View Post example](https://github.com/narative/gatsby-theme-novela-example/blob/master/content/posts/2019-04-31-understanding-the-gatsby-lifecycle/index.mdx)
 
-### General
+```yml
+# novela-site/content/posts/2020-01-01/index.mdx
+---
+title: Why Narative loves Gatsby
+author: Dennis Brotzky, Thiago Costa, Brad Tiller
+date: 2019-04-27
+hero: ./images/narative-gatsby-hero.jpg
+excerpt: This is a love story about Narative and Gatsby
+---
+# And then under the heading YML you can insert any MDX you like
+# like headings, links, code, images, etc
+# This will show up in the body of your post
+# ...
+```
 
-- **For most developers, I recommend starting with the [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/docs/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+## Site Metadata
 
-- **To dive straight into code samples, head [to Gatsby's documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _How-to Guides_ and _Reference_ items in the primary navigation.
+| Key           | Required |    Type    |                                                                     Description                                                                     |
+| ------------- | :------: | :-------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| title         | required |   String   |                                                            Used for the <title></title>                                                             |
+| name          | required | String Ref |                                           Used in multiple locations including meta tags and site footer                                            |
+| siteUrl       | required |    Date    |                                                                  Used in meta tags                                                                  |
+| description   | required |   String   |                                                                  Used in meta tags                                                                  |
+| hero.heading  | required |   String   |                                                                  Used in the Hero                                                                   |
+| hero.maxWidth | optional |   number   |                                                          Used in the Hero. Defaults to 652                                                          |
+| social        | required |   Array    | [View supported icon/name combinations](https://github.com/narative/gatsby-theme-novela/blob/master/%40narative/gatsby-theme-novela/src/components/SocialLinks/SocialLinks.tsx#L15). `url` is required and the icon is chosen based on the url. If you also provide `name`, then the icon will be the same as the name you provided as long as the name equals one of the supported icons (See example bellow). Used in site footer and meta tags |
 
-## 🌟 Supporting me
+[View Site Metadata example](https://github.com/narative/gatsby-theme-novela-example/blob/master/gatsby-config.js)
 
-Thanks for using this project! I'm always interested in seeing what people do with my projects, so don't hesitate to tag me on [Twitter](https://twitter.com/lekoarts_de) and share the project with me.
+Within `gatsby-config.js` you can configure `siteMetadata` to show the values you wish.
+It is `required` to add `siteMetada`
 
-Please star this project, share it on Social Media or consider supporting me on [Patreon](https://www.patreon.com/lekoarts) or [GitHub Sponsor](https://github.com/sponsors/LekoArts)!
+```js
+// gatsby-config.js
+module.exports = {
+  siteMetadata: {
+    title: `Novela by Narative`,
+    name: `Narative`,
+    siteUrl: `https://gatsby-theme-novela.netlify.com`,
+    description: `This is my description that will be used in the meta tags and important for search results`,
+
+    // hero
+    // A required key and will be displayed on the main page of Noveal
+    hero: {
+      heading: `Perspectives on technology, design and business from the team at Narative.`,
+      maxWidth: 652,
+    },
+
+    // social
+    // Add in the social links that will be displayed in the footer
+    social: [
+      {
+        url: `https://twitter.com/narative`,
+      },
+      {
+        url: `https://github.com/narative`,
+      },
+      {
+        url: `https://www.instagram.com/narative.co/`,
+      },
+      {
+        url: `https://dribbble.com/narativestudio`,
+      },
+      {
+        name: 'stackoverflow',
+        url: `https://bit.ly/1x0885j`,
+      },
+    ],
+  },
+};
+```
+
+## Why use Novela?
+
+There are many Gatsby themes to choose from. Here’s why we think you won’t regret choosing Novela:
+
+### Multiple Homepage Layouts
+
+Choose between a variable width grid or a simpler list style to display each story.
+
+### Mailchimp integration
+
+Start building an audience and grow your blog subscribers with Mailchimp.
+
+### Toggleable Light and Dark Mode
+
+Out of the box, Novela includes both light and dark designs that can be toggled by the user anywhere across the site.
+
+<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-light-dark.gif" alt="gatsby-novela-theme light dark theme demonstration" />
+
+### Simple Customization with [Theme UI](https://theme-ui.com/)
+
+Consistent, easy-to-read code lets you quickly customize every color and setting.
+
+### Show code effortlessly
+
+High quality embedded codeblocks that make authoring technical blog posts a breeze.
+
+### Highlight-to-Share
+
+Users can select text within an article to copy or share to platforms like Twitter and LinkedIn.
+
+<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-share.jpg" alt="gatsby-novela-theme light dark theme demonstration" />
+
+### Read Time and Progress
+
+Read time is automatically generated for each article based on length, with an animated bar tracking the reader’s progress through each piece.
+
+### Accessibility in Mind
+
+Navigable by cursor or keyboard, readable via screens and screen readers, Novela ensures everyone on the web can read what you write.
+
+<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-accessibility.gif" alt="gatsby-novela-theme accessibility demonstration" />
+
+# The Future
+
+This project is early in development and we are interested in creating an even more extensible experience, and increased out-of-box functionality, including:
+
+- Data sources such as Prismic, Sanity, Contentful, Netlify CMS, and others
+- Built in search with Algolia or similar
+- Tags, categories, and more
+- More theme variations
+- More customization options
+
+<div>
+<a href="https://gatsby-theme-novela.netlify.com" target="_blank">
+<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-demo.jpg" alt="gatsby-novela-theme live demo" width="295px" />
+</a>
+</div>
+
+<div>
+<a href="https://www.narative.co/design/open/novela" target="_blank">
+<img src="https://raw.githubusercontent.com/narative/gatsby-theme-novela-example/master/assets/gatsby-theme-novela-cta-figma.jpg" alt="gatsby-novela-theme figma link" width="295px" />
+</a>
+</div>
